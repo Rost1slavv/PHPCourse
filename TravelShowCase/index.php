@@ -12,9 +12,9 @@
         function e($value) {
             return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
         }
-    
-        $handle = opendir(__DIR__ . '/images');
 
+
+        $handle = opendir(__DIR__ . '/images');
         $images = [];
         $allowedExtensions = [
             'jpg',
@@ -66,7 +66,6 @@
             </figcaption>
         </figure>
     <?php endforeach; ?>
-
     </main>
 </body>
 </html>
